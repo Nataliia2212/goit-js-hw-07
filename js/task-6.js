@@ -30,8 +30,8 @@ function destroy() {
 function onBtnCreate() {
   const amount = inputElem.value;
   if (amount >= 1 && amount <= 100) {
-    destroy()
     const boxes = createBoxes(amount);  
+    inputElem.value = '';
     
     return boxElem.innerHTML = boxes
   } else {
