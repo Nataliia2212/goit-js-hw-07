@@ -4,6 +4,7 @@
 
 body {
   margin: 16px;
+  padding: 24px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -11,4 +12,247 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+    display: block;
+    padding: 8px 16px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4E75FF;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+button:hover,
+button:focus {
+  background-color: #6C8CFF;
+}
+
+input {
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    padding: 8px 16px;
+    color: #2E2F42;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+
+    transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+input:focus {
+  border-color: #000;
+}
+
+/* =================== TASK - 1 ===================== */
+
+.item {
+  padding: 16px;
+  width: 392px;
+  border-radius: 8px;
+  background: #F6F6FE;
+  color: #2E2F42;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.item h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.96px;
+}
+
+.item li {
+  padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #808080;
+}
+
+.item li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+
+/* =================== TASK - 2 ===================== */
+.gallery {
+  display: flex;
+  row-gap: 48px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.gallery img {
+  display: block;
+  object-fit: cover;
+  width: 360px;
+  height: 300px;
+}
+
+
+/* =================== TASK - 3 ===================== */
+
+#name-input {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 360px;
+}
+
+#name-input::placeholder {
+    color: #2E2F42;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+}
+
+h1 {
+    color: #2E2F42;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.96px;
+}
+
+/* =================== TASK - 4 ===================== */
+
+.login-form {
+    width: 408px;
+    padding: 24px;
+}
+
+.login-form input {
+    margin-top: 8px;
+    width: 100%;
+    padding-left: 8px;
+}
+
+.login-form>label {
+    display: inline-block; 
+    width: 360px;
+    color: #2E2F42;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+  }
+
+.login-form label:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.login-form button {
+    min-width: 54px;
+    margin-top: 16px;
+}
+
+/* =================== TASK - 5 ===================== */
+
+.widget {
+  padding: 100px 88px;
+}
+
+.widget p {
+    margin-bottom: 16px;
+    text-align: center;
+    color: #2E2F42;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+}
+
+.change-color {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 148px;
+}
+
+/* =================== TASK - 6 ===================== */
+
+#controls {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #F6F6FE;
+}
+
+#controls>input {
+  min-width: 150px;
+  text-align: center;
+}
+
+#controls>button {
+    min-width: 120px;
+}
+
+#controls>button:last-child {
+    background-color: #FF4E4E;
+
+}
+#controls>button:last-child:hover,
+#controls>button:last-child:hover {
+  background-color: #FF7070;
+}
+
+#boxes {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #F6F6FE;
+}
+
+#boxes div{
+  flex-shrink: 0
 }
